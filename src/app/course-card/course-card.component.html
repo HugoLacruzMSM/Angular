@@ -1,0 +1,8 @@
+
+
+<main class="main">
+<h1>{{data.title}}</h1>
+<p>{{data.text}}</p>
+<img src="favicon.ico" alt="hola" (click)="onLogoClicked()">
+<input class="input-demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>
+</main>
