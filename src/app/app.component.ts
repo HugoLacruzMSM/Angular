@@ -8,5 +8,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular-tutorial';
+  data ={
+    title: 'HUGO LACRUZ',
+    text: 'This is an Angular Tutorial, 8:18'
+  }
+
+  onLogoClicked() {
+    alert('Hello world')
+  }
+
+  onKeyUp(newTitle: string) {
+    this.data.title = newTitle;
+  }
 }
