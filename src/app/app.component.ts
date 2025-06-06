@@ -11,6 +11,7 @@ import {Course} from './model/course';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  courses = COURSES;
 
   angularCourse:Course = COURSES[0];
   rxjsCourse:Course = COURSES[1];

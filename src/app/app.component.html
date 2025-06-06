@@ -1,7 +1,13 @@
 <router-outlet>
-  <course-card [course]="angularCourse" (courseSelected)="onCourseSelected($event)"></course-card>
-  <course-card [course]="rxjsCourse" (courseSelected)="onCourseSelected($event)"></course-card>
-  <course-card [course]="ngrxCourse" (courseSelected)="onCourseSelected($event)"></course-card>
+  <div class="courses" >
+    @for (course of courses; track course.id){
+      <course-card
+        [course]="course" (courseSelected)="onCourseSelected($event)" />
+    }
+
+
+
+  </div>
 </router-outlet>
 
 
