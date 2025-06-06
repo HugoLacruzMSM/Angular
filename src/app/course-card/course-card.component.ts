@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Course} from '../model/course';
 
 @Component({
   selector: 'course-card',
@@ -6,16 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './course-card.component.html',
   styleUrl: './course-card.component.scss'
 })
-export class CourseCardComponent {
-  data ={
-    title: 'HUGO LACRUZ',
-    text: 'This is an Angular Tutorial, 8:18'
-  }
-  onLogoClicked() {
-    alert('Hello world')
-  }
+export class CourseCardComponent implements  OnInit{
+  @Input({
+    required:true
+  })
+  course!:Course;
 
-  onKeyUp(newTitle: string) {
-    this.data.title = newTitle;
+  ngOnInit(): void {
+    console.log(this.course)
   }
 }

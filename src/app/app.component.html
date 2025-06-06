@@ -1,8 +1,11 @@
 
 
 <router-outlet>
-  <course-card></course-card>
+  <course-card [course]="angularCourse" ></course-card>
 
+  <course-card [course]="rxjsCourse" ></course-card>
+
+  <course-card [course]="ngrxCourse" ></course-card>
 
 </router-outlet>
 
