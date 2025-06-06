@@ -1,5 +1,5 @@
   <div class="course-card-box">
-    <h1>{{index}}. {{ course.description }}</h1>
+    <h1>{{index + ' ' + course.description }}</h1>
     <img src="favicon.ico" alt="Error" class="course-card-img">
     <button (click)="onEmitCourse()">View Course</button>
   </div>
