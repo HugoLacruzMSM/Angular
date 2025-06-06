@@ -11,14 +11,15 @@ import {Course} from './model/course';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  courses = COURSES;
+  courses = [...COURSES];
 
-  angularCourse:Course = COURSES[0];
-  rxjsCourse:Course = COURSES[1];
-  ngrxCourse:Course = COURSES[2];
+
 
   onCourseSelected(course: Course) {
    console.log('App component ',course)
   }
 
+  trackCourse(index:number, course:Course){
+    return course.id
+  }
 }
