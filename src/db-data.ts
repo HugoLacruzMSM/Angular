@@ -1,4 +1,5 @@
 export const COURSES: any =[
+  undefined,
   {
     id: 1,
     description: "ANGULAR CORE DEEP DIVE",
@@ -10,7 +11,7 @@ export const COURSES: any =[
   {
     id: 2,
     description: "Rxjs In practise course",
-    //iconUrl: 'favicon.ico',
+    iconUrl: 'favicon.ico',
     longDescription: "Long description 2",
     category: "Category 2",
     lessonsCount: 20},

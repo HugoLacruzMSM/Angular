@@ -1,17 +1,9 @@
-  <div class="course-card-box">
-
-    @if (course.id ==1){
-      <h2>
-        COURSE WITH id 1 DETECTED!
-      </h2>
-    } @else if (course.iconUrl) {
-      <img [src]="course.iconUrl" alt="Error" class="course-card-img">
-    } @else {
-      <h2>No image available!</h2>
-    }
-
-
-    <h1>{{index + ' ' + course.description }}</h1>
+  <div class="course-card-box" *ngIf="course">
+    <h1>{{index + ' ' + course?.description }}</h1>
+    <img alt="Error" class="course-card-img" *ngIf="isImageVisible(); else noImage" [src]="course.iconUrl">
+    <ng-template #noImage>
+      <p>No image available.</p>
+    </ng-template>
     <button (click)="onEmitCourse()">View Course</button>
   </div>
 
