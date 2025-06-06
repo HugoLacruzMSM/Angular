@@ -21,5 +21,4 @@ export class AppComponent {
   }
 
 
-  protected readonly COURSES = COURSES;
 }

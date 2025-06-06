@@ -1,6 +1,17 @@
   <div class="course-card-box">
+
+    @if (course.id ==1){
+      <h2>
+        COURSE WITH id 1 DETECTED!
+      </h2>
+    } @else if (course.iconUrl) {
+      <img [src]="course.iconUrl" alt="Error" class="course-card-img">
+    } @else {
+      <h2>No image available!</h2>
+    }
+
+
     <h1>{{index + ' ' + course.description }}</h1>
-    <img src="favicon.ico" alt="Error" class="course-card-img">
     <button (click)="onEmitCourse()">View Course</button>
   </div>
 
