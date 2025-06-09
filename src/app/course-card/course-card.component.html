@@ -4,6 +4,14 @@
       <h1>{{index + ' ' + course?.description }}</h1>
 
     </div>
+    <div class="course-category" [ngSwitch]="course.category">
+
+          <div class="category" *ngSwitchCase="'BEGINNER'">Beginner</div>
+      <div class="category" *ngSwitchCase="'INTERMEDIATE'">Intermediate</div>
+      <div class="category" *ngSwitchCase="'ADVANCED'">Advanced</div>
+      <div class="category" *ngSwitchDefault>All Levels</div>
+
+    </div>
     <img alt="Error" class="course-card-img" *ngIf="isImageVisible(); else noImage" [src]="course.iconUrl">
     <ng-template #noImage>
       <p>No image available.</p>

@@ -3,9 +3,9 @@ export const COURSES: any =[
   {
     id: 1,
     description: "ANGULAR CORE DEEP DIVE",
-    //iconUrl: 'favicon.ico',
+    iconUrl: 'favicon.ico',
     longDescription: "Long description 1",
-    category: "BEGINNER",
+    category: "INTERMEDIATE",
     lessonsCount: 10
   },
   {
@@ -13,7 +13,7 @@ export const COURSES: any =[
     description: "Rxjs In practise course",
     iconUrl: 'favicon.ico',
     longDescription: "Long description 2",
-    category: "Category 2",
+    category: "ADVANCED",
     lessonsCount: 20},
   {
     id: 3,
@@ -21,6 +21,14 @@ export const COURSES: any =[
     iconUrl: 'favicon.ico',
     longDescription: "Long description 3",
     category: "BEGINNER",
+    lessonsCount: 30
+  },
+  {
+    id: 3,
+    description: "tutorial 4",
+    iconUrl: 'favicon.ico',
+    longDescription: "Long description 3",
+    category: "",
     lessonsCount: 30
   }
 ]
