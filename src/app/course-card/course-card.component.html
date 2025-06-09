@@ -1,6 +1,9 @@
   <div class="course-card" *ngIf="course"
   [ngClass]="cardClasses()">
-    <h1>{{index + ' ' + course?.description }}</h1>
+    <div class="course-title">
+      <h1>{{index + ' ' + course?.description }}</h1>
+
+    </div>
     <img alt="Error" class="course-card-img" *ngIf="isImageVisible(); else noImage" [src]="course.iconUrl">
     <ng-template #noImage>
       <p>No image available.</p>
