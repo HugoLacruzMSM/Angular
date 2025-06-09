@@ -5,7 +5,7 @@ export const COURSES: any =[
     description: "ANGULAR CORE DEEP DIVE",
     //iconUrl: 'favicon.ico',
     longDescription: "Long description 1",
-    category: "Category 1",
+    category: "BEGINNER",
     lessonsCount: 10
   },
   {
@@ -20,7 +20,7 @@ export const COURSES: any =[
     description: "Ngrx In Depth",
     iconUrl: 'favicon.ico',
     longDescription: "Long description 3",
-    category: "Category 3",
+    category: "BEGINNER",
     lessonsCount: 30
   }
 ]

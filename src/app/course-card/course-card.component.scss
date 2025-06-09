@@ -1,13 +1,5 @@
-.course-card-box{
-  display: flex;
-  flex-direction: column;
-  border: solid black 1px;
-  align-items: center;
-
-  .course-card-img{
-    margin: 2rem;
-    width: 3rem;
-  }
+.course-card.beginner{
+  background-color: lightcoral;
 
 }
 

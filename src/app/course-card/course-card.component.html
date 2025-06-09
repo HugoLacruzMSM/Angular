@@ -1,4 +1,5 @@
-  <div class="course-card-box" *ngIf="course">
+  <div class="course-card" *ngIf="course"
+  [ngClass]="cardClasses()">
     <h1>{{index + ' ' + course?.description }}</h1>
     <img alt="Error" class="course-card-img" *ngIf="isImageVisible(); else noImage" [src]="course.iconUrl">
     <ng-template #noImage>

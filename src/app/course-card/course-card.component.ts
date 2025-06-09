@@ -1,11 +1,12 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Course} from '../model/course';
-import {NgIf} from '@angular/common';
+import {NgClass, NgIf} from '@angular/common';
 
 @Component({
   selector: 'course-card',
   imports: [
-    NgIf
+    NgIf,
+    NgClass
   ],
   templateUrl: './course-card.component.html',
   styleUrl: './course-card.component.scss'
@@ -29,5 +30,13 @@ export class CourseCardComponent implements  OnInit{
 
   isImageVisible() {
     return this.course && this.course.iconUrl
+  }
+
+  cardClasses() {
+
+    if(this.course.category == 'BEGINNER'){
+      return 'beginner';
+    }
+    return [];
   }
 }
