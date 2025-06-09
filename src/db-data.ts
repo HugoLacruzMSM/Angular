@@ -1,8 +1,7 @@
-export const COURSES: any =[
-  undefined,
+export const COURSES:any =[
   {
     id: 1,
-    description: "ANGULAR CORE DEEP DIVE",
+    description: "angular core deep dive",
     iconUrl: 'favicon.ico',
     longDescription: "Long description 1",
     category: "INTERMEDIATE",
@@ -28,7 +27,7 @@ export const COURSES: any =[
     description: "tutorial 4",
     iconUrl: 'favicon.ico',
     longDescription: "Long description 3",
-    category: "",
+    category: "BEGINNER",
     lessonsCount: 30
   }
 ]
