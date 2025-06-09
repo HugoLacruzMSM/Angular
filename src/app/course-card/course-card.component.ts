@@ -1,12 +1,13 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Course} from '../model/course';
-import {NgClass, NgIf} from '@angular/common';
+import {NgClass, NgIf, NgStyle} from '@angular/common';
 
 @Component({
   selector: 'course-card',
   imports: [
     NgIf,
-    NgClass
+    NgClass,
+    NgStyle
   ],
   templateUrl: './course-card.component.html',
   styleUrl: './course-card.component.scss'
@@ -38,5 +39,8 @@ export class CourseCardComponent implements  OnInit{
       return 'beginner';
     }
     return [];
+  }
+  cardStyles(){
+    return {'background-image':'url('+ this.course.iconUrl+')'}
   }
 }
