@@ -24,6 +24,7 @@ export class CourseCardComponent implements  OnInit{
 
   @Input() index!: number;
 
+
   ngOnInit(): void {
   }
 
@@ -42,8 +43,5 @@ export class CourseCardComponent implements  OnInit{
       return 'beginner';
     }
     return [];
-  }
-  cardStyles(){
-    return {'background-image':'url('+ this.course.iconUrl+')'}
   }
 }
